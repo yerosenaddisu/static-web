@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+header .logo img {
+    max-height: 50px;
+    width: auto;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero .btn {
+    background: #c59d5f;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.portfolio, .services, .about, .contact {
+    padding: 4rem 0;
+}
+
+.portfolio .gallery, .services .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.portfolio .gallery-item, .services .service-item {
+    flex: 1 1 calc(33.333% - 2rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.7s;
+}
+
+.portfolio .gallery-item:hover, .services .service-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio .gallery-item img, .services .service-item {
+    width: 100%;
+    height: auto;
+}
+
+.about p, .contact form {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form .btn {
+    background: #c59d5f;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
